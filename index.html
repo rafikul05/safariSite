@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kaziranga Awesome Assam</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer ></script> 
+</head>
+<body>
+	<div class="H_Notice_div">
+			<marquee id="H_notice">Notice : Kaziranga National Park, This is the website for Online Booking Elephant and Jeep Safari websites !</marquee>
+	</div>
+
+		<div class = "nav-bar">
+				<nav>
+					<div class="logo"><h1>Kaziranga</h1>
+					<h3>Awesome Assam</h3></div>
+				<input type="checkbox" name="" id="sidebar-active">
+				<label for="sidebar-active" class="open-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+				
+				<label for="sidebar-active" id="overlay"></label>
+				<div class="links-container">
+					<label for="sidebar-active" class="close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></label>
+					<a href="#">Home</a>
+					<a href="#">Online Booking</a>
+					<a href="#">About Us</a>
+					<a href="#">Payment</a>
+					<a href="#">Contact us</a>
+				</div>
+			</nav>
+		</div>
+	<img src="imgs/kaziranga.jpg" alt="" id="banner">
+	<h1 id="banner-name">Kaziranga National Park</h1>
+
+<form action="" method="post">
+     <div class="calendar-div">
+        <div class="wrapper">
+            <h2 id="calender-header">Book Your Safari Here: </h2>
+            <header>
+                <p class="current-date"></p>
+                <div class="icon">
+                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                    <span id="next" class="material-symbols-rounded">chevron_right</span>
+                </div>
+            </header>
+            
+            <div class="calendar">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days">
+                   
+                </ul>
+
+            </div>
+            <div class="inputs">
+                <select  class ="inner-input" name="" id="">
+                    <option value="">Select Your safari</option>
+                    <option value="">Jeep</option>
+                    <option value="">Elephant</option>
+                </select>
+                <select class ="inner-input"  name="" id="">
+                    <option value="">Select Your zone</option>
+                    <option value="">Western Zone</option>
+                    <option value="">Eastern Zone</option>
+                    <option value="">Central Zone</option>
+                </select>
+                <select class ="inner-input"  name="" id="">
+                    <option value="">Select Your Timing</option>
+                    <option value="">7:30 To 9:30 AM</option>
+                    <option value="">9:30 To 11:30 AM</option>
+                    <option value="">11:30 To 3:30 PM</option>
+                    <option value="">2:35 To 4:35 PM</option>
+                    <option value="">5-6 AM | 6-7 AM</option>
+                </select>
+                <input class ="inner-input"  type="text" name="Traveler-name" placeholder="Traveler name">
+                <input  class ="inner-input" type="text" name="Mobile-Number" placeholder="Mobile Number">
+                <input class ="inner-input"  type="email" name="email" placeholder="email ID">
+                <input id="submit" type="submit" value="Book Now" name="submit">
+            </div>
+        </div>
+       <div class="col-lg-7">
+               <div class="box1-listing">
+                  <span class="box1-span">Kaziranga Elephant Safari Booking Price </span>                    
+                  <table class="table table-bordered border-primary">
+                      <thead>
+                          <tr>
+
+                                <th>Safari Zones	</th>
+                                <th>Price for Indian</th>
+                                <th>Price for Foreign Nationals</th>
+                                <th>Duration</th>
+                            
+                            </tr>
+                      </thead>
+                     <tbody>
+                      
+                        <tr>
+                           <td>Kohora (Central) Range</td>
+                           <td>        N/A</td>
+                           <td>  3800 / Person</td>
+                           <td>1 hour</td>
+                        </tr>
+                        <tr>
+                           <td>Bagori ( Western) Range</td>
+                           <td>  1500 / Person</td>
+                           <td>         N/A</td>
+                           <td>1 hour</td>
+                        </tr>
+                        <tr>
+                           <td>Agaratoli (Eastern) Range</td>
+                           <td>        N/A</td>
+                           <td>        N/A</td>
+                           <td>       N/A</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="box1-listing">
+                  <span class="box1-span">Kaziranga Jeep Safari Booking Price</span>                    
+                  <table class="table table-bordered border-primary">
+                      <thead>
+                          <tr>
+
+                                <th>Safari Zones	</th>
+                                <th>Price for Indian</th>
+                                <th>Price for Foreign Nationals</th>
+                                <th>Duration</th>
+                            
+                            </tr>
+                      </thead>
+                     <tbody>
+                      
+                        <tr>
+                           <td>Kohora (central) Range</td>
+                           <td> 4000 / Jeep</td>
+                           <td> 7500 / Jeep</td>
+                           <td>2 hours</td>
+                        </tr>
+                        <tr>
+                           <td>Bagori ( Western) Range</td>
+                           <td> 4050 / Jeep</td>
+                           <td> 7500 / Jeep</td>
+                           <td>2 hours</td>
+                        </tr>
+                        <tr>
+                           <td>Agaratoli (Eastern) Range</td>
+                           <td> 5000 / Jeep</td>
+                           <td> 8500 / Jeep</td>
+                           <td>2 hours</td>
+                        </tr>
+                        <tr>
+                           <td>Burapahar Range</td>
+                           <td> 5500 / Jeep</td>
+                           <td> 8500 / Jeep</td>
+                           <td>2 hours</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               
+              
+                 
+                  <table class="table table-bordered border-primary">
+                      <thead>
+                          <tr>
+
+                                <th>Note for Jeep Safari Ride	</th>
+                                <th>Note for   Elephant Safari Ride</th>
+                              
+                            
+                            </tr>
+                      </thead>
+                     <tbody>
+                      
+                        <tr>
+                           <td>Please mention that Jeep safari is provided on non sharing basis and maximum 5 persons are allowed to travel in 1 jeep. Children below the age of 4 years are free and above 4 years treated as an adult full seat is charged.</td>
+                           <td> Elephant Safari slot 5 AM to 6 AM | 6 AM to 7 AM is decided one day prior to your exact safari date and same will be informed accordingly to you. Advance Booking is mandatory for Confirm Booking of Elephant. / Jeep</td>
+                        </tr>
+                       <tr>
+                            <td>Stay in your vehicle: Remain in your vehicle at all times during the safari. </td>
+                            <td>Stay in your safari: Remain in your vehicle at all times during the safari. </td>
+                       </tr>
+                       <tr>
+                            <td>Arrive on time: Arrive on time for your safari. </td>
+                            <td>Arrive on time: Arrive on time for your safari. </td>
+                       </tr>
+                       <tr>
+                            <td>Don't litter: Don't litter or pollute the park.  </td>
+                            <td>Don't litter: Don't litter or pollute the park.  </td>
+                        </tr>
+                     </tbody>
+                  </table>
+            
+               
+               
+            </div>
+            </div>
+
+     </div>
+</form>
+<div class="description">
+    <div class="col-md-9">
+               <p id="description-para">Almost after many decades of efforts and experiments, Kaziranga National Park has become a well-known example of the success of wildlife conservation. As a outcome of sustained conservation endeavor, the estimated number of rhinoceros has significantly increased from just 40 in 1911 to more than 2400 in the year 2018 according to the census which was jointly conducted by the forest department of the Government of the Assam and some recognized wildlife NGOs. The sad part of the story are floods that occurs annually which is spread over Nagoan, Golaghat and Sonitpur districts of Assam and covers an area of little more than a thousand square kilometers (482 square kilometers of core zone and 548 square kilometers of buffer zone).</p>
+    </div>
+    <div class="col-md-3">       
+            <img id="description-img" src="imgs/banner.jpg" alt="book-safari">     
+    </div>
+</div>
+<div id="Safaris">
+    <h1 id="Safari-heading">Know More About Kaziranga</h1>   
+    <div class="Safaris">
+        
+        <div class="jeepSafari">
+            <img class="Safari-img" src="imgs/bandhavgarh-jeep-booking.jpeg" alt="">
+            <a class="know-more" href="">Know More</a>
+        </div>
+        <div class="elephantSafari">
+            <img class="Safari-img" src="imgs/nzpllpwhvw019bha9h8t.avif" alt="">
+            <a class="know-more" href="">Know More</a>
+        </div>
+        <div class="Know-kaziranga">
+            <img class="Safari-img" src="imgs/kaziranga_park_gate1.webp" alt="">
+            <a class="know-more" href="">Know More</a>
+            
+        </div>
+    </div>
+</div>
+<footer>
+<div class="footer-blocks">
+<h1>Location</h1>
+<p>kaziranga, Nagaon, 782136</p>
+<p>Assam</p>
+</div>
+<div class="footer-blocks">
+<h1>Contact</h1>
+<p>+91 1039942997</p>
+<p>example@gmai.com</p>
+</div>
+</div>
+<div class="footer-blocks">
+    <div class="Icon-Links">
+        <a class="contact-icon" href=""><img src="imgs/icons8-facebook.svg" alt=""></a>
+        <a class="contact-icon" href=""><img src="imgs/icons8-insta.svg" alt=""></a>
+        <a class="contact-icon" href=""><img src="imgs/icons8-whatsapp.svg" alt=""></a>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>

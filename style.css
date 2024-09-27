@@ -1,0 +1,531 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Popins',sans-serif;
+	
+}
+.H_Notice_div{
+	background-color: rgb(0, 0, 0);
+	height: 30px;
+}
+#H_notice{
+	color: white;
+	margin-top: 7px;
+}
+
+nav{
+	height: 60px;
+	width: 75vw;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: flex-end ;
+	align-items: center;
+	margin: 5px 0 0 0;
+}
+.nav-bar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.links-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+
+}
+#banner{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	margin-top: 10px;
+}
+nav a {
+	height: 100%;
+	padding: 0 20px;
+	display:flex;
+	justify-items: flex-end;
+	align-items: center;
+	text-decoration: none;
+	color: rgb(0, 83, 25);
+}
+nav a:hover{
+	background-color: yellowgreen;
+}
+
+#sidebar-active{
+	display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+	display: none;
+	padding: 0 20px;
+}
+
+
+/* text customization -D  */
+#banner-name{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.logo{
+	margin: 7px 0 0 7px;
+	height: 60px;
+	width: 200px;
+	color: green;
+	font-size: 14px;
+}
+
+/* calender */
+
+.calendar-div{
+	display: flex;
+	align-items: start;
+	justify-content: space-around;
+	min-height: 612px;
+	background-color: rgba(241, 241, 241, 0.582);
+	padding: 40px 0;
+}
+#calender-header{
+	background-color: #28a745;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding-left:5px;
+	height:4vh;
+	border-radius: 8px 8px 0 0;
+
+}
+.wrapper header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 30px 10px;
+}
+.wrapper{
+	width: 450px;
+	border-radius: 10px;
+	background: rgb(230, 229, 229);
+	margin-right: 10px;
+}
+.calendar ul{
+	display: flex;
+	text-align: center;
+	list-style: none;
+	flex-wrap: wrap;
+}
+.calendar{
+	padding: 20px;
+}
+header .current-date{
+	font-size: 1.45rem;
+	font-weight: 500;
+
+}
+header .icon span{
+	height: 38px;
+	width: 38px;
+	margin: 0 1px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+	cursor: pointer;
+	color:#878787;
+	font-size: 1.9rem;
+}
+header .icon span:last-child{
+	margin-right: -10px;
+
+}
+header .icon span:hover{
+	background: #f2f2f2;
+}
+.calendar ul li{
+	width: calc(100%/7);
+	position: relative;
+}
+.calendar .weeks li{
+	font-weight: 500;
+}
+.calendar .days{
+	margin-bottom: 20px;
+}
+.calendar .days li{
+	margin-top: 30px;
+	cursor: pointer;
+	z-index: 1;
+}
+.calendar .days  li::before{
+	position: absolute;
+	content: "";
+	height: 40px;
+	border-radius: 50%;
+	width: 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+.days li:hover:before{
+	background: #f2f2f2;
+}
+
+.days li.inactive{
+	color: #aaa;
+}
+
+.days li.active::before{
+	background:#28a745;
+}
+.days li.active{
+	color: #fff;
+}
+.col-lg-7{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 65%;
+	
+	height: 100%;
+
+}
+.box1-span{
+	margin-bottom: 10px;
+	background-color: #28a745;
+	color: white;
+	padding: 8px 17px;
+	font-weight: 700;
+}
+
+.table{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+}
+.border-primary{
+	border-color: #007bff;
+}
+table{
+	display: table;
+	border-collapse:collapse ;
+	text-indent: initial;
+	border-spacing: 2px;
+	
+}
+.table.table-bordered.border-primary{
+	margin: 0;
+}
+.box1-listing{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+th{
+	border: solid black 1px;
+	padding: 8px;
+	background-color: #9b9898;
+	color: white;
+	font-weight: 700;
+
+}
+td{
+	border: solid black 1px;
+	padding: 8px;
+}
+
+
+.inner-input{
+	width: 40%;
+	height: 42px;
+	margin: 6px 15px;
+	text-indent: 6px;
+	border: .5px solid black;
+}
+.inputs{
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	flex-shrink: initial;
+}
+#submit{
+	height: 45px;
+	width: 40%;
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	border-radius: 8px;
+	border: 1px solid black;
+}
+
+/***	description				***/
+
+.description{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 40px;
+	margin-bottom: 20px;
+
+}
+.col-md-9{
+	width: 70%;
+}
+
+.col-md-3{
+	width: 25%;
+}
+
+#description-img{
+	margin: 10px 0 0 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+#description-para{
+	margin: 30px 10px 20px 40px;
+	position: relative;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Popins";
+	
+}
+
+/***	safaris block	**/
+.Safaris{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+
+.Safari-img{
+	width: 30vw;
+	height: 35vh;
+	object-fit: cover;
+	margin: 0 5px;
+}
+#Safari-heading{
+	text-align: left;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+.know-more{
+	align-items: center;
+	justify-content: center;
+	box-sizing: inherit;
+	height: 40px;
+	width: 150px;
+	background-color: #f96825;
+	display: flex;
+	margin: -25px auto;
+	text-decoration: none;
+	color: white;
+	border-radius: 0.3rem;
+}
+
+.jeepSafari{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	bottom: 50px;
+}
+.elephantSafari{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.Know-kaziranga{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#Safaris{
+	padding: 20px 0 50px 0;
+	background-color: rgba(241, 241, 241, 0.582);
+
+}
+
+/***	footer	***/
+footer{
+	width: 100%;
+	background-color: #878787;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: whitesmoke;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: x-large;
+}
+.footer-blocks{
+	margin: 20px;
+}
+.contact-icon{
+	margin: 0 20px;
+}
+
+/**					Mobile  view		**/
+
+
+@media(max-width: 675px){
+	#banner{
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+	nav{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.logo{
+		margin-top: 8px;
+		text-align: center;
+		padding-right: 31vw;
+	}
+	.H_Notice_div{
+		display: none;
+	}
+	.links-container{
+		flex-direction: column;
+		align-items: flex-start;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 10;
+		justify-content: flex-start;
+		width: 300px;
+		box-shadow: -5px 0 5px rgba(0, 0, 0,0.25);
+		background-color: rgb(255, 255, 255);
+		transition: 0.75s ease-out;
+	}
+	#banner{
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		margin-top: 10px;
+	}
+	nav a{
+		box-sizing: border-box;
+		height: auto;
+		width: 100%;
+		padding: 20px 30px;
+		justify-content: flex-start;
+
+	}
+	.open-sidebar-button, .close-sidebar-button{
+	display: block;
+	}
+	#sidebar-active:checked ~ .links-container{
+		right: 0;
+	}
+	#sidebar-active:checked ~ #overlay{
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+	#banner-name{
+	text-align: center;
+	font-size: large;
+	}
+	.calendar-div{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100vw;
+		padding: 0;
+		align-items: center;
+		
+
+	}
+	.wrapper{
+		width: 95vw;
+		margin: 0 10px;
+		margin-bottom: 20px;
+	}
+	.Safaris{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 0;
+	}
+	#Safaris{
+		padding: 0;
+	}
+	.col-lg-7{
+		width: 95vw;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	.description{
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 0 2vw;
+		width: 95vw;
+	}
+	#description-para{
+		margin: 0 ;
+		text-align: justify;
+	}
+	#description-img{
+		margin-left: .1rem;
+	}
+	.col-md-9{
+		width: 95vw;
+	}
+	.col-md-3{
+		width: 95vw;
+	}
+	#Safari-heading{
+		font-size: x-large;
+		margin: 15px 0;
+		padding: 10px 0 0 0;
+		text-align: center;
+	}
+	.jeepSafari{
+		width: 95%;
+		height: 300px;
+		margin-bottom: 1rem;
+		
+	}
+	.elephantSafari{
+		width: 95%;
+		height: 300px;
+		margin-bottom: 1rem;
+	}
+	.Know-kaziranga{
+		width: 95%;
+		height: 300px;
+		margin-bottom: 1rem;
+	}
+	.Safari-img{
+		width: 95vw;
+		height: 95%;
+	}
+	.know-more{
+		margin: -1.2rem auto;
+	}
+	footer{
+		margin-top: 1rem;
+	}
+}
+
